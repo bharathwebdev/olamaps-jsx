@@ -9,9 +9,9 @@ function Map({apiKey,coordiates={lat:20.5937,lng:78.9629},zoom=8,width="100vw",h
         longitude: coordiates.lng,
         zoom: zoom
       });
-      
+
   return (
-    <div>
+
     <DeckGL
         style={{ width: width, height: height, overflow: "hidden" }}
         viewState={viewState}
@@ -28,7 +28,7 @@ function Map({apiKey,coordiates={lat:20.5937,lng:78.9629},zoom=8,width="100vw",h
               }}
             />
       </DeckGL>
-    </div>
+
   )
 }
 
